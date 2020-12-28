@@ -1,0 +1,46 @@
+/* ################################ Tag Selectors ############################*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1B262C;
+  font-family: arial;
+  font-weight: lighter;
+}
+
+p {
+  font-family: arial;
+}
+
+a {
+  font-family: arial;
+  text-decoration: none;
+  color: #3282b8;
+}
+
+td {
+  font-family: arial;
+}
+
+body {
+  background-color: #bbe1fa;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #0f4c75;
+  border-width: 7px;
+  height: 0;
+  width: 15%;
+}
+
+/* ################################ Class Selectors ##########################*/
+
+.fernando_photo {
+  width: 210px;
+  height: auto;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.fernando_photo:hover {
+  width: 240px;
+}

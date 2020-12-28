@@ -1,17 +1,23 @@
 /* ################################ Tag Selectors ############################*/
 
 h1, h2, h3, h4, h5, h6 {
-  color: #1B262C;
+  color: #3f6ab7;
   font-family: arial;
   font-weight: lighter;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 p {
   font-family: arial;
+  font-size: 18px;
 }
 
 a {
   font-family: arial;
+  font-size: 18px;
   text-decoration: none;
   color: #3282b8;
 }
@@ -27,22 +33,34 @@ body {
 hr {
   border-style: none;
   border-top-style: dotted;
-  border-color: #0f4c75;
+  border-color: #3f6ab7;
   border-width: 7px;
   height: 0;
-  width: 15%;
+  width: 10%;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 /* ################################ Class Selectors ##########################*/
 
 .fernando_photo {
+  background: url("../assets/fernando_blue.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
   width: 210px;
-  height: auto;
-  -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  height: 210px;
+  -webkit-transition: .8s ease-in-out;
+  -moz-transition: .8s ease-in-out;
+  -o-transition: .8s ease-in-out;
+	transition: .8s ease-in-out;
+
 }
 .fernando_photo:hover {
+  background: url("../assets/fernando.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
   width: 240px;
+  height: 240px;
 }
 
 .data_background {
@@ -50,11 +68,34 @@ hr {
   height: 400px;
   position: absolute;
   left: -10px;
-  top: 100px;
+  top: 120px;
   z-index: -1;
 }
 
 .horizontal_separator_1 {
   width: 100%;
   height: 250px;
+}
+
+/* Progress bar */
+
+.progress {
+ width: 300px;
+ border: 1px solid black;
+ border-radius: 10px;
+ position: relative;
+ padding: 3px;
+ margin-left: 10px;
+}
+
+.percent {
+ position: absolute;
+ color: #cbd2e9;
+ left: 46%;
+}
+
+.bar {
+ height: 20px;
+ background-color: #3f6ab7;
+ border-radius: 10px;
 }

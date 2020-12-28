@@ -21,7 +21,7 @@ td {
 }
 
 body {
-  background-color: #bbe1fa;
+  background-color: white;
 }
 
 hr {
@@ -43,4 +43,18 @@ hr {
 }
 .fernando_photo:hover {
   width: 240px;
+}
+
+.data_background {
+  width: 104%;
+  height: 400px;
+  position: absolute;
+  left: -10px;
+  top: 100px;
+  z-index: -1;
+}
+
+.horizontal_separator_1 {
+  width: 100%;
+  height: 250px;
 }

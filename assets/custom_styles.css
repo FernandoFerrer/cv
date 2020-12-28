@@ -24,6 +24,7 @@ a {
 
 td {
   font-family: arial;
+  font-size: 18px;
 }
 
 body {
@@ -63,6 +64,11 @@ hr {
   height: 240px;
 }
 
+.centered_div {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .data_background {
   width: 104%;
   height: 400px;
@@ -77,10 +83,10 @@ hr {
   height: 250px;
 }
 
-/* Progress bar */
+/* Progress bar ##############################################################*/
 
 .progress {
- width: 300px;
+ width: 30vw;
  border: 1px solid black;
  border-radius: 10px;
  position: relative;
@@ -98,4 +104,159 @@ hr {
  height: 20px;
  background-color: #3f6ab7;
  border-radius: 10px;
+}
+
+/* Block Quotes ##############################################################*/
+/* center the blockquote in the page */
+.blockquote-wrapper {
+   display: flex;
+   height: 50vh;
+   padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #3f6ab7;
+    padding: 30px 0;
+    width: 80%;
+    max-width: 1000px;
+    z-index: 1;
+    margin: 80px auto;
+    align-self: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+.blockquote h1 {
+    position: relative;
+    color: #3f6ab7;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+    position: absolute;
+    content: "”";
+    color: #3f6ab7;
+    font-size: 10rem;
+    line-height: 0;
+    bottom: -43px;
+    right: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 50px) {
+    .blockquote h1 {
+        font-size: 30px;
+   }
+
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+    position: relative;
+    color: #292a2b;
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+/* Timeline ##################################################################*/
+.time-line-box {
+  height: 100px;
+  padding: 100px 0;
+  width: 100%;
+  background-color: #cbd2e9;
+}
+
+.time-line-box .timeline {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+
+.time-line-box .timestamp {
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-line-box .status {
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #3f6ab7;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+.time-line-box .status span {
+  padding-top: 8px;
+}
+.time-line-box .status span:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: #3f6ab7;
+  border-radius: 12px;
+  border: 2px solid #3f6ab7;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 200ms ease-in;
+}
+
+.swiper-container {
+  width: 95%;
+  margin: auto;
+  overflow-y: auto;
+}
+.swiper-wrapper{
+  display: inline-flex;
+  flex-direction: row;
+  overflow-y:auto;
+  justify-content: center;
+}
+.swiper-container::-webkit-scrollbar-track{
+   background:#a8a8a8b6;
+}
+.swiper-container::-webkit-scrollbar{
+  height: 6px;
+}
+.swiper-container::-webkit-scrollbar-thumb{
+   background: #4F4F4F !important;
+}
+.swiper-slide {
+  text-align: center;
+  font-family: arial;
+  font-size: 14px;
+  width: 200px;
+  height: 100%;
+  position: relative;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.swiper-slide:hover {
+  font-size: 20px;
+  font-family: arial;
+  border-color: #3f6ab7;
+  border-width: 6px;
 }

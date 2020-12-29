@@ -19,6 +19,7 @@ body {
   overflow-x: hidden;
   margin-left: 0;
   margin-right: 0;
+  background-color: white;
 }
 
 p {
@@ -36,10 +37,6 @@ a {
 td {
   font-family: arial;
   font-size: 18px;
-}
-
-body {
-  background-color: white;
 }
 
 hr {
@@ -107,6 +104,7 @@ hr {
 
 .bottom_button {
   background-size: 100% auto;
+  background-repeat:no-repeat;
   color: rgba(255,255,255,0);
   padding-bottom: 60px;
   margin-left: 6px;
@@ -114,11 +112,15 @@ hr {
 }
 
 .email {
-  background-image: url("../assets/email.png");
+  background-image: url("../assets/mail.png");
 }
 
 .linkedin {
   background-image: url("../assets/linkedin.png");
+}
+
+.orcid {
+  background-image: url("../assets/orcid.png");
 }
 
 .centered_div {
@@ -131,10 +133,10 @@ hr {
 }
 
 .data_background {
-  width: 103%;
+  width: 100%;
   height: 400px;
   position: absolute;
-  left: -5px;
+  left: -1px;
   top: 120px;
   z-index: -1;
 }
@@ -165,6 +167,30 @@ hr {
  height: 20px;
  background-color: var(--color_1);
  border-radius: 10px;
+}
+
+.progress .bartext {
+  visibility: hidden;
+  font-family: arial;
+  font-size: 20px;
+  width: 30vw;
+  background-color: var(--color_3);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  left: 18vw;
+  z-index: 1;
+  /* Fade in tooltip - takes 1 s to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.progress:hover .bartext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Block Quotes ##############################################################*/
